@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../node_modules/slick-carousel/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="../node_modules/slick-carousel/slick/slick-theme.css">
+    <script src="../main.js"></script>
+    <script src="../config.js"></script>
+    <title>Além do código</title>
+</head>
+
+<body>
+
+    <header class="top">
+        <div class="containertop">
+        </div>
+        <Text id="head">FRETE GRÁTIS PARA COMPRAS ACIMA DE R$ 500</Text>
+      </header>
+
+    <header class="topo">
+        <div class="container">
+          <div class="topo-titulo">
+                <Text class="topo-logo"> RalphFashion</Text>
+          </div>
+    
+          <nav class="topo-links">
+            <a href="#novidades">novidades</a>
+            <a href="nossaslojas.html">nossas lojas</a>
+            <a href="#minha conta e meus pedidos">minha conta e meus pedidos</a>
+          </nav>
+        </div>
+      </header>
+
+    <div id="content">
+
+        <div class="slides">
+                <input type="radio" name="slide" id="slide1" checked>
+                <input type="radio" name="slide" id="slide2">
+                <input type="radio" name="slide" id="slide3">
+
+            <div class="slide s1">
+                <a href="#" target="_self"> 
+                    <img src="../assets/images/Fullbanner.webp" alt="clothes" >
+                </a>
+            </div>
+
+            <div class="slide">
+                <a href="#" target="_self"> 
+                    <img src="../assets/images/Fullbanner_01.webp"  alt="clothes" >
+                </a>
+            </div>
+
+            <div class="slide">
+                <a href="#" target="_self"> 
+                    <img src="../assets/images/Fullbanner_02.webp" alt="clothes" >
+                </a>
+            </div>
+        </div>
+
+        <div class="navigation">
+            <label class="bar" for="slide1"></label>
+            <label class="bar" for="slide2"></label>
+            <label class="bar" for="slide3"></label>
+        </div>
+    </div>
+
+<main>
+
+    <div id="middles">
+
+        <section class="middle">
+            <a href="#" target="_self"> 
+                <img src="../assets/images/Middle1.webp" alt="clothes" >
+            </a>
+        </section>
+
+        <section class="middle">
+            <a href="#" target="_self"> 
+                <img src="../assets/images/Middle2.webp" alt="clothes" >
+            </a>
+        </section>
+
+        <section class="middle">
+            <a href="#" target="_self"> 
+                <img src="../assets/images/Middle3.webp" alt="clothes" >
+            </a>
+        </section>
+
+        <section class="middle">
+            <a href="#" target="_self"> 
+                <img src="../assets/images/Middle1.webp" alt="clothes" >
+            </a>
+        </section>
+    </div>
+    
+    <div class="carousel">
+        <div>
+            <a href="#" target="_self"> 
+                <img src="../assets/images/Modelo1.webp" alt="clothes" >
+            </a>
+            <div class="text">
+                <Text id="name">BLUSA ESTAMPADA ENIGMA</Text>
+                <br>
+                <Text class='prices'>
+                    <Text class='oldPrice'> R$ 300,00</Text>
+                    <Text class='price'> R$ 287,20</Text>
+                </Text>
+            </div>
+        </div>
+
+        <div>
+            <a href="#" target="_self"> 
+                <img src="../assets/images/Modelo2.webp" alt="clothes" >
+            </a>
+            <div class="text">
+                <Text id="name">BLUSA MANGA CURTA ESTAMPADA</Text>
+                <br>
+                <Text class='prices'>
+                    <Text class='oldPrice'> R$ 300,00</Text>
+                    <Text class='price'> R$ 287,20</Text>
+                </Text>
+            </div>
+        </div>
+
+        <div>
+            <a href="#" target="_self"> 
+                <img src="../assets/images/Modelo3.webp" alt="clothes" >
+            </a>
+            <div class="text">
+                <Text id="name">VESTIDO CURTO PREGA OMBRO</Text>
+                <br>
+                <Text class='prices'>
+                    <Text class='oldPrice'> R$ 300,00</Text>
+                    <Text class='price'> R$ 287,20</Text>
+                </Text>
+            </div>
+        </div>
+
+        <div>
+            <a href="#" target="_self"> 
+                <img src="../assets/images/Modelo4.webp" alt="clothes" >
+            </a>
+            <div class="text">
+                <Text id="name">VESTIDO T-SHIRT ESTAMPADO OÁSIS</Text>
+                <br>
+                <Text class='prices'>
+                    <Text class='oldPrice'> R$ 300,00</Text>
+                    <Text class='price'> R$ 287,20</Text>
+                </Text>
+            </div>
+        </div>
+
+        <div>
+            <a href="#" target="_self"> 
+                <img src="../assets/images/Modelo3.webp" alt="clothes" >
+            </a>
+            <div class="text">
+                <Text id="name">VESTIDO CURTO PREGA OMBRO</Text>
+                <br>
+                <Text class='prices'>
+                    <Text class='oldPrice'> R$ 300,00</Text>
+                    <Text class='price'> R$ 287,20</Text>
+                </Text>
+            </div>
+        </div>
+    </div>
+        <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+        <script src="../node_modules/slick-carousel/slick/slick.js" type="text/javascript" charset="utf-8"></script>
+        <script type="text/javascript">
+        $(document).on('ready', function() {
+            $('.carousel').slick({
+                dots: true,
+                infinite: true,
+                centerMode: true,
+                slidesToShow: 4,
+                slidesToScroll: 4,
+            responsive: [
+                    {
+            breakpoint: 767,
+            settings: {
+                slidesToShow: 4,
+                slidesToScroll: 4,
+                infinite: true,
+                dots: true,
+            }
+            },
+            {
+            breakpoint: 766,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+            },
+        ]
+    });
+});
+    </script>
+</main>
+</body>
+<footer>
+    <div>
+        <text class="title">TENDÊNCIAS DA TEMPORADA</text>
+        <br>
+        <text class="pharse"> Aproveite! Entrega rápida +  Atendimento personalizado.  </text>
+        <br>
+        <text class="pharse"> Conteúdos sob medida pra você. </text>
+    </div>
+</footer>
+</html>
